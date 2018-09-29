@@ -1,0 +1,9 @@
+<?php
+include "classes.inc.php";
+include "conn.inc.php";
+
+$query_get_companies = "SELECT * FROM news_applied";
+$run_get_companies = mysqli_query($conn, $query_get_companies);
+$count= mysqli_num_rows($run_get_companies);
+echo $count;
+?>
